@@ -11,6 +11,7 @@ body {
   margin:0px;
   padding:16px;
   text-align:center;
+  font-size: 18px;
 }
 
 .wrap {
@@ -44,7 +45,6 @@ img {
 }
 
 p {
-  font-size: 18px;
   margin:0;
 }
 

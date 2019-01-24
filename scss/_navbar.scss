@@ -1,0 +1,101 @@
+#mainNav {
+  min-height: 56px;
+  background-color: $black;
+  .navbar-toggler {
+    border-radius: 0;
+    color: $primary;
+    border: 0.5px solid $gray-400;
+    padding: 4px 8px;
+    padding-bottom: 3px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar-toggler i {
+    transform-origin: 50% 50%;
+    transition: transform 1.28s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .navbar-toggler[aria-expanded="false"] i {
+    transform: rotateX(900deg)
+  }
+  .navbar-brand {
+    color: $primary;
+    font-weight: 700;
+    padding: .9rem 0;
+  }
+  .navbar-nav {
+    .nav-item {
+      &:hover {
+        color: fade-out($primary, .5);
+        outline: none;
+        background-color: transparent;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    .navbar-brand {
+      padding: .5rem 0;
+      color: $primary
+    }
+    .nav-link {
+      transition: none;
+      padding: 2rem 1.5rem;
+      color: $primary;
+      &:hover {
+        color: lighten($black, 50%);
+      }
+      &:active {
+        color: lighten($black, 50%);
+      }
+    }
+    
+    &.navbar-shrink {
+      background-color: $primary;
+      .navbar-brand {
+        color: $black;
+      }
+      .nav-link {
+        color: $black;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+        &:hover {
+          color: lighten($black, 50%);
+        }
+        &:active {
+          color: lighten($black, 50%);
+        }
+        &.active {
+          color: $black;
+          outline: none;
+          border-bottom: 0.25rem solid $black;
+        }
+      }
+    }
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $primary;
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-bottom: 0.25rem solid transparent;
+  &:hover {
+    color: $primary;
+  }
+  &:active {
+    color: darken($primary, 50%);
+  }
+  &.active {
+    color: $primary;
+    outline: none;
+  }
+}

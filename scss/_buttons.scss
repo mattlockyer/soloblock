@@ -1,5 +1,5 @@
 .btn {
-  color: $gray-900;
+  color: $black;
   padding: 1.25rem 2rem;
   font-family: $ibmc;
   font-size: 0.8rem;
@@ -10,15 +10,17 @@
 }
 
 .btn-primary {
+  color:$black;
   background-color: $gray-100;
   &:hover {
-    background-color: darken($gray-100, 10%);
+    background-color: darken( $gray-100, 32%);
   }
   &:focus {
-    background-color: darken($gray-100, 10%);
-    color: white;
+    color:$black;
+    background-color: darken( $gray-100, 32%);
   }
   &:active {
-    background-color: darken($gray-100, 15%) !important;
+    color:$black;
+    background-color: darken( $gray-100, 32%) !important;
   }
 }

@@ -15,11 +15,6 @@
     font-size: 2rem;
     line-height: 2rem;
   }
-  h2 {
-    color: $gray-100;
-    max-width: 20rem;
-    font-size: 1rem;
-  }
   @media(min-width: 768px) {
     h1 {
       font-size: 4rem;
@@ -30,13 +25,9 @@
     height: 100vh;
     padding: 0;
     h1 {
-      font-size: 6.5rem;
-      line-height: 6.5rem;
+      font-size: 5rem;
+      line-height: 5rem;
       letter-spacing: 0.8rem;
-    }
-    h2 {
-      max-width: 30rem;
-      font-size: 1.25rem;
     }
   }
 }

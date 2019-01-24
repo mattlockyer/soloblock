@@ -69,10 +69,10 @@
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
         &:hover {
-          color: lighten($black, 50%);
+          color: lighten($black, 32%);
         }
         &:active {
-          color: lighten($black, 50%);
+          color: lighten($black, 32%);
         }
         &.active {
           color: $black;
@@ -92,7 +92,7 @@
     color: $primary;
   }
   &:active {
-    color: darken($primary, 50%);
+    color: darken($primary, 32%);
   }
   &.active {
     color: $primary;

@@ -1,18 +1,29 @@
+.masthead div {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
 .masthead {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .8)} 50%, $black 100%), url('../img/bg-masthead.jpg');
-  filter: grayscale(64%) brightness(2);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    filter: grayscale(64%) brightness(1.8);
+    background: linear-gradient(to bottom, #{fade-out($black, .8)} 50%, $black 100%), url('../img/bg-masthead.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
   h1 {
-    font-smooth: always !important;
-    text-shadow: 0 0 2px $black;
+    text-shadow: 0 0 1px $black;
     color: $gray-100;
     font-family: $ibmc;
     font-size: 2rem;

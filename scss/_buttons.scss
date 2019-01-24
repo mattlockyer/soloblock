@@ -1,24 +1,22 @@
 .btn {
   color: $black;
   padding: 1.25rem 2rem;
-  font-family: $ibmc;
   font-size: 0.8rem;
-  font-weight: bold !important;
   text-transform: uppercase;
   letter-spacing: .1rem;
   border: 0;
   border-radius: 0;
-  font-smooth: always !important;
+  transform: translateZ(0);
 }
 
 .btn-primary {
   color:$black;
   background-color: $gray-100;
   &:hover {
+    color:$black;
     background-color: darken( $gray-100, 32%);
   }
   &:focus {
-    color:$black;
     background-color: darken( $gray-100, 32%);
   }
   &:active {

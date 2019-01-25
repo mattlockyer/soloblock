@@ -313,8 +313,8 @@
   max-width: 240px;
   border-radius: 50%;
   margin-bottom: 16px;
-  -webkit-filter: grayscale(50%) brightness(1.16);
-  filter: grayscale(50%) brightness(1.16);
+  -webkit-filter: grayscale(32%) brightness(1.1);
+  filter: grayscale(32%) brightness(1.1);
 }
 
 .team-section a {

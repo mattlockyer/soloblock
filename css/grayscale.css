@@ -229,6 +229,16 @@
   filter: grayscale(16%) brightness(1.1);
 }
 
+.projects-section .featured-text .explainer {
+  padding-right: 16px;
+}
+
+.projects-section .explainer {
+  font-size: 16px !important;
+  display: inline-block;
+  color: #ced4da !important;
+}
+
 .projects-section .text-white-50 {
   color: #ced4da !important;
 }
@@ -384,6 +394,66 @@
 
 .contact-section .social a:active {
   color: #161616;
+}
+
+.leadership-section {
+  padding-top: 96px;
+}
+
+.leadership-section .carousel {
+  width: 100% !important;
+}
+
+.leadership-section .carousel-caption {
+  display: block !important;
+  width: 100%;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.leadership-section .carousel-caption h5 {
+  font-size: 1.1em;
+}
+
+.leadership-section .carousel-caption p {
+  font-size: 0.8em;
+  padding: 0 8px;
+}
+
+.leadership-section .carousel-indicators {
+  padding-top: 2px;
+  width: 132px;
+  left: calc(50% - 66px);
+  bottom: 24px;
+  margin: 0;
+}
+
+.leadership-section .carousel-item {
+  height: 200px;
+}
+
+.leadership-section .carousel-item img {
+  width: 100% !important;
+}
+
+@media (min-width: 992px) {
+  .leadership-section {
+    padding: 160px 0 64px 0;
+  }
+  .leadership-section .carousel-caption h5 {
+    font-size: 1.25em;
+  }
+  .leadership-section .carousel-caption p {
+    font-size: 1em;
+  }
+  .leadership-section .carousel-item {
+    height: 400px;
+  }
+  .leadership-section .carousel-indicators {
+    background-color: transparent;
+    bottom: 28px;
+  }
 }
 
 body {

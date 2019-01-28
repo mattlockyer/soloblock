@@ -1,0 +1,53 @@
+.leadership-section {
+  padding-top: 96px;
+  .carousel {
+    width: 100% !important;
+  }
+  .carousel-caption {
+    display: block !important;
+    width: 100%;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);  
+    h5 {
+      font-size: 1.1em;
+    }
+    p {
+      font-size: 0.8em;
+      padding: 0 8px;
+    }
+  }
+  .carousel-indicators {
+    padding-top: 2px;
+    width: 132px;
+    left: calc(50% - 66px);
+    bottom: 24px;
+    margin: 0;
+  }
+  .carousel-item {
+    height: 200px;
+    img {
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding: 160px 0 64px 0;
+    .carousel-caption {
+      h5 {
+        font-size: 1.25em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+    .carousel-item {
+      height: 400px;
+    }
+    .carousel-indicators {
+      background-color: transparent;
+      bottom: 28px;
+    }
+  }
+
+}

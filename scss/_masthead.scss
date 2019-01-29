@@ -14,16 +14,16 @@
     height: 100%;
     position: absolute;
     top: 0; left: 0;
-    filter: grayscale(56%) brightness(1.32);
-    background: linear-gradient(to bottom, #{fade-out($black, .8)} 50%, $black 100%), url('../img/bg-masthead.jpg');
-    background-position: center;
+    filter: grayscale(20%) brightness(1.32);
+    background: linear-gradient(to bottom, #{fade-out($black, 1)} 0%, #{fade-out($black, .9)} 75%, $black 100%), url('../img/bg-masthead.jpg');
+    background-position: 7% 50%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
   }
 
   h1 {
-    text-shadow: 0 0 8px $black;
+    text-shadow: 0 1px 6px $black;
     color: $gray-100;
     font-family: $ibmc;
     font-size: 2rem;

@@ -1,6 +1,12 @@
 .signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/bg-signup.jpg');
+  margin-top: -64px;
+  @media (min-width: 992px) {
+    margin-top: 64px;
+  }
+  color: $white;
+  text-shadow: 0 0 2px $black;
+  padding: 200px 0;
+  background: linear-gradient(to bottom, white 0%, #{fade-out($black, 1)} 10%,#{fade-out($black, .75)} 75%,$black 100%), url('../img/bg-masthead-4.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
